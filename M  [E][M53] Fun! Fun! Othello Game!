@@ -1,0 +1,63 @@
+※ The act of posting and sharing problems & solutions to the outside of the company online/offline is strictly prohibited. 
+Problems of the SW Expert Academy are only open to Samsung Electronics employees.
+
+Restrictions 
+Execution time : 1 sec(C/C++) / 2 sec(JAVA) for 30 cases combined
+Memory : Maximum 256MB available for heap and stack combined (note: Maximum 1 MB can be used for stack)
+
+submit limit
+9 times
+
+Score 
+When you submit your code, you can see immediate result from server.
+ Pass : You have successfully passed the qualification test.
+ Fail : you got 0 score or partial score because of wrong answer, runtime error, time out so on 
+ evaluation. Final result can be different from the result during the test because another input will be used for actual evaluation.
+
+Question:-
+Othello is a board game for two players taking turns to place either white or black disks on the board. A player with the majority of disks on the board wins the game. 
+The board has three sizes of 4x4, 6x6 and 8x8 (width and height). The players will start the game by placing the disks (B: Black, W: White) as below if 6x6 board is used.
+The same applies to 4x4 and 8x8 boards. The players will alternatively put white and black disks. The game begins with the black disks first and there are only four squares to put them as shown below.
+At his turn, a player can place a disk of his color on one of the empty squares of the board, adjacent to an opponent's disc. By placing his disc, his opponent's row of discs is bordered at each end by a disc of his color, and his opponent's disc(s) on the row be flipped to his color.
+The board looks as below if the black disk is placed at coordinates (2, 3).Likewise, the players alternatively put the black and white disks on the board. 
+One player will take his turn again if the other player doesn’t have a square to put his disk. The game ends when there are no empty squares or the two players have no squares to put the disks. 
+At last, the player who has more disks wins the game.
+
+[Input]
+The first line contains the number of test cases known as T.
+The first line of each test case has N, a length of one side of the board, and the number of placing disks M(1 ≤ M ≤ N * N - 4). N could be 4, 6 or 8.
+M lines have a square to place the disk and its color. The disk will be black if color is expressed 1 and white if 2. 
+Inputting 3 2 1 means placing the black disk at coordinates (3, 2).
+Squares where the disks can’t be placed are not given as input.
+
+[Output]
+For each test case, print the number of black and white disks on the board after the game. 
+Print 30 34 when the black disks are 30 and white disks are 34.
+
+Input Example
+2
+4 12
+1 2 1   
+1 1 2
+4 3 1
+4 4 2
+2 1 1
+4 2 2
+3 4 1
+1 3 2
+2 4 1
+1 4 2
+4 1 2
+3 1 2
+4 12
+
+…
+ 
+// T : Number of test case
+// N, M of 1st test case
+// Place the black disk at (1, 2)
+// N, M of 2nd test case
+
+Output Example
+#1 0 16
+…
